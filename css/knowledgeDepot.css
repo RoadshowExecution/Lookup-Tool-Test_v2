@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1";
+.searchBackground
+{
+	background-image:url("../images/search.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align:top;
+}
+
+.arrow_box {
+	position: relative;
+	background: #EF6D39;
+	
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #EF6D39;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #ffffff;
+	border-width: 36px;
+	margin-top: -36px;
+}
+
+.dataTables_filter, .dataTables_length{ display: none;}
+
+
+#searchResSection
+{margin-bottom:1%; margin-top:1%; margin-left:1%; margin-right:1%; height:644px;background-repeat:no-repeat;background-position:center; background-size:1146px; overflow-x:hidden}
+
+td a{color:#f25c29}
+
+table td tr 
+{
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width:1px) and (max-width:767px)
+{
+	#searchImage {display:none;}
+	#mobileSearchImage {display:block; background-color:#EF6929; padding:2%}
+	#infoImg{display:none;}
+	#logoImg{width:100%!important; margin-left:50%; padding-top:11%!important}
+	#titleImg{padding-top:6%!important}
+	#materialHeader{padding-left:1%!important}
+	#selectCategTxt{font-size:small!important; font-weight:600}
+	#selectSubCategTxt{font-size:small!important; font-weight:600}
+	#materialHeader{display:none}
+	#mobileMaterialHeader{display:block; padding-left:5%!important; text-align:center!important}
+	#searchImg{width:77%!important; height:458px!important}
+	#categoryBkts{padding-left:0%!important}
+	#searchResSection{height:511px; margin-top:0%; background-size:33%}
+	#mobileSearchResults{display:block;border:1px solid black;
+					margin-top:53%;
+					margin-left:28%;
+					margin-right:1%;
+					background-color:white;}
+	#categoryBtn{height:8%}
+	#category{margin-left:0%!important}
+	#main{height:530px;}
+	#logo{margin-left:-21%; width: 74%}
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px)
+{
+	#searchImg{height:497px!important; max-height:489px!important}
+	#searchInput{width:92%}
+	
+	#infoImg{width:100%!important; padding:4%!important} 
+	#selectCategTxt{font-size:large!important}
+	#selectSubCategTxt{font-size:large!important}
+}
+
+@media only screen and (min-width: 1200px)
+{
+	#searchImg{height:503px!important; max-height:409px!important}
+	
+	#infoImg{padding:6%!important} 
+	#categoryBkts{width:100%; margin-left:0%}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+	#searchImg{height:534px!important}
+}
+
+@media only screen and (min-width: 768px)
+{
+	#searchImage {display:block;}
+	#mobileSearchImage {display:none;}
+	#materialHeader{display:block}
+	#mobileMaterialHeader{display:none}
+	#searchResults{display:block;}
+	#mobileSearchResults{display:none;}
+	#main{height:655px;}
+	#logoImg{padding-top:10%!important}
+}
+
+.activeImage
+{
+	box-shadow : 0px 1px 16px 4px #E9692F; 
+	background-color : #E9692F
+}
+
+.odd
+{
+	  background-color: ghostwhite!important;
+}
+
+td
+{
+border-bottom:1px solid #bbb
+}
+th
+{
+	font-weight:700!important;
+}
+thead
+{
+	  background-color: gainsboro;
+}

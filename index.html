@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+	<title>2015 Power Roadshow Venues and Stores</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="./css/jquery-ui.css" />
+	<link rel="stylesheet" href="./css/jquery.dataTables.css"/>
+	<link id="myStyleSheet" rel="stylesheet" href="./css/knowledgeDepot.css" />
+	<script src="./js/jquery-1.9.1.min.js"></script>
+	<script src="./js/jquery-migrate-1.2.1.js"></script>
+	
+	<script src="./js/jquery.dataTables.min.js" ></script>
+	<script src="./js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/underscore-min.js"></script>
+	<script src="./js/roadshow.js"></script>
+	<style type="text/css">
+	body{color: #333333}
+	.w{height: 132px !important}
+	.a{font-weight: normal;}
+		@-moz-document url-prefix() 
+		{
+			@media only screen and (min-width:768px) and (max-width: 991px)
+			{
+				#searchImage 
+				{
+					height:183px!important
+				}
+			}
+		}
+	</style>
+</head>
+<body style="background-color:#999999">
+	<div class="container" style="background-color:#eee; height:100%">
+		<div id="header" class="row" style="padding-top:1%; padding-bottom:1%">
+			<div id="logoTitle" class="col-xs-12 col-sm-6 col-md-6">
+				<div id="logo" class="col-xs-12 col-sm-12 col-md-12">
+					<img id="logoImg" class="img-responsive" alt="" style="width:95%; padding-top:41%; margin-top:-6%" src="./images/knowledgeImage.png"> 
+				</div>
+				<div id="title" class="col-xs-12 col-sm-12 col-md-12">
+					
+					<h3 id="materialHeader" style="text-align:center;">2016 D28 Spring Roadshow Venues and Stores</h3>
+					<h5 id="mobileMaterialHeader" style="text-align:left; padding-left:10%; font-size:1.2em">2016 D28 Spring Roadshow Venues and Stores</h5>
+				</div>
+				
+			</div>
+	
+			<div id="search" class="col-xs-12 col-sm-6 col-md-6">
+				<div id="searchImage" style=" background-color:#EF6D39;border-radius:3%;padding:3%; height:auto;color:#ffffff">
+					
+			
+						<span style="color:white;  ">Enter your 4 digit store number to search for nearby roadshow venues.</span>
+						<div >
+						<input id="searchInput" type="text" style="padding:1%;width:100%;margin-top:5px; margin-bottom:5px; color:#333333 !important " placeholder="Eg. 0105">
+						<br/>
+						Highlight and Copy the Offering ID
+						<br/>
+						Click the Register Associates link<br/>
+						Click "Next" on the orders screen <br/>
+						Paste the Offering ID into the search bar
+						</div>
+					
+				</div>
+				<div id="mobileSearchImage">
+					<span class="glyphicon glyphicon-search img-circle" style="background-color:#D9D9D9; border:6px solid #D9D9D9"></span>
+					<input id="mobileSearchInput" type="text" style="width:88%" placeholder="Search">
+				</div>
+			</div>
+		</div>
+		<div id="main" class="row" style="border-top:2px solid black;clear:both">
+			<div id="category" style="display:none;box-shadow: 2px -2px 7px black; height:100%; overflow-x:hidden; overflow-y:auto; z-index:1000" class="col-xs-3 col-sm-4 col-md-4">
+				<div class="row" id="categoryBtn" style="background-color:#CCCCCC">
+					<h4 id="selectCategTxt" style="text-align:center; color:#333333">Select a Department</h4>
+				</div>
+				<div class="row" id="categoryBkts" style="padding-left:1%; margin-top:3%">
+					
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-12" id="subCategory">
+					<div class="row" id="subCategoryBtn" style="display:none;background-color:#CCCCCC">
+						<h4 id="selectSubCategTxt" style="text-align:left; padding-left:2%; color:#333333">Select a Sub-Category</h4>
+					</div>
+					<div class="row" id="subBuckets" style="margin-top:1.4%; margin-bottom:1%; border-bottom:1px solid #999999; padding-bottom:2%; clear:both; display:none">
+					
+					</div>
+					<div class="row" id="searchResults" style="clear:both">
+							<div class="row" id="searchResSection" style="background-url('images/roadshow.jpeg') !important"> 
+							<div style="text-align:right;padding:5px"><a href="http://kdlms.homedepot.com/Saba/Web_wdk/Cloud/learning/provider/sell/createorder/findPeople.rdf?firstCall=true&teamOrder=true&selectedCheckboxOption=false&linkCxt=LLR" target="_blank">Click here to Register Associates</a></div>
+							<table id="courseMaterialsTable" style="width:100%"></table>
+							</div>
+					</div>
+			</div>
+			
+		</div>
+	<div id="footer" class="row">
+	</div>
+	</div>
+</body>
+	
+</html>
